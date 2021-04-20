@@ -1,0 +1,36 @@
+- id: 1
+  title: 'Всероссийская студенческая олимпиада по математике'
+  start_date: 2021-04-26
+  end_date: 2021-04-30
+  registration_date: 2021-04-22
+  description: 'Студенты'
+  link: https://www.s-vfu.ru/universitet/rukovodstvo-i-struktura/instituty/imi/conference/olympiad/
+  category: Олимпиады
+  location: Онлайн
+- id: 2
+  title: 'Лидеры России 2021'
+  start_date: 2021-04-26
+  end_date: 2021-04-30
+  registration_date: 2021-04-26
+  description: 'Студенты'
+  link: https://www.s-vfu.ru/universitet/rukovodstvo-i-struktura/instituty/imi/conference/olympiad/
+  category: Олимпиады
+  location: Якутск
+- id: 3
+  title: 'Авиахакатон'
+  start_date: 2021-04-23
+  end_date: 2021-04-25
+  registration_date: 2021-04-22
+  description: 'Разработчики, Специалисты по работе с данными, Дизайнеры, Продуктологи, Эксперты авиаиндустрии'
+  link: https://aviahack.mai.ru/
+  category: Хакатоны
+  location: Якутск
+- id: 4
+  title: 'Мероприятие N'
+  start_date: 2021-04-14
+  end_date: 2021-04-25
+  registration_date: 2021-04-22
+  description: 'Разработчики, Специалисты по работе с данными, Дизайнеры, Продуктологи, Эксперты авиаиндустрии'
+  link: https://aviahack.mai.ru/
+  category: Хакатоны
+  location: Якутск

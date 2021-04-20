@@ -1,0 +1,14 @@
+<div class="grid-cards ">
+  {% for post in site.posts offset:include.offset limit:include.limit %}
+    <div class="card">
+      <a href="{{ post.url }}">
+        <img class="card__image" src="{{ post.cover_image }}" alt="{{ post.cover_image_alt }}">
+      </a>
+      <div class="card__body">
+        <h4 class="card__title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="card__text">{{ post.short_summary }}</p>
+        <small class="card__date">{{ post.date | date: "%d.%m.%Y"}}</small>
+      </div>
+    </div>
+  {% endfor %}
+</div>

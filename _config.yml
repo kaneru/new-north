@@ -1,0 +1,24 @@
+title: Новый Север
+email: team@new-north.ru
+description: >-
+  Новый Север — это лайфстайл журнал про жизнь на Севере.
+baseurl: ""
+url: "https://new-north.ru"
+twitter_username: new_notrh
+
+collections:
+  looking_for:
+    output: true
+    sort_by: date
+
+include: [_pages]
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:year-:month-:day-:title/

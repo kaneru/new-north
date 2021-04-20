@@ -1,0 +1,22 @@
+---
+layout: page
+title: Календарь
+permalink: /calendar
+---
+
+<p>Ближайшие мероприятия в Якутске и не только</p>
+
+<h2>Хакатоны</h2>
+
+<div class="calendar-grid">
+  {% assign sorted_items = site.data.calendar | sort: 'start_date' %}
+  {% for item in sorted_items %}
+    {% if item.category contains "Олимпиады" %}
+      <div class="calendar-card shadow">
+        <h4 class="calendar-card__title"><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h4>
+        <time class="calendar-card__date">{{ item.start_date | russian_long_date }}–{{ item.end_date | russian_long_date }}</time>
+        <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="calendar-card__button">{{ item.location }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,10 @@
+- name: Главная
+  link: /
+- name: Рубрики
+  link: /categories
+- name: Календарь
+  link: /calendar
+- name: Ищу!
+  link: /looking_for
+- name: О нас
+  link: /about

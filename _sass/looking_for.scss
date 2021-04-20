@@ -1,0 +1,30 @@
+.looking-for-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.looking-for-card {
+  background: $gray-300;
+  padding: 1em;
+  border-radius: 0.5rem;
+  min-height: 12rem;
+}
+
+.looking-for-card__title {
+  margin: 0;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $red-800;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .looking-for-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

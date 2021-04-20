@@ -1,0 +1,15 @@
+<div class="featured-troika-wrapper">
+  <div class="featured-categories-grid">
+    <h3>Избранные рубрики</h3>
+    <ul>
+      {% for category in site.data.categories %}
+        {% for subcategory in category.subcategories %}
+          {% if subcategory.isFeatured %}
+            <li><a href="/{{ subcategory.id }}">{{ subcategory.name }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+  <a class="featured-troika-wrapper__all-items-link"href="/categories">Все рубрики</a>
+</div>

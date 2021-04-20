@@ -1,0 +1,16 @@
+---
+layout: page
+title: Ищу!
+permalink: /looking_for
+---
+
+<p>Размещайте объявления о поиске команды, стажировок, работы для студентов, людей для проекта и стартапов!</p>
+
+<div class="looking-for-grid">
+  {% for item in site.looking_for %}
+  <div class="looking-for-card shadow">
+    <h3 class="looking-for-card__title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+    <p class="looking-for-card__description">{{ item.descrtiption }}</p>
+  </div>
+  {% endfor %}
+</div>

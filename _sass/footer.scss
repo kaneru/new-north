@@ -1,0 +1,24 @@
+.footer {
+  background: $blue-100;
+  width: 100%;
+  padding: 1.5em 1em;
+  margin-top: 4em;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $blue-900;
+
+    &:hover {
+      color: $red-800;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 1.5em 4em;
+  }
+}

@@ -1,0 +1,56 @@
+- id: education
+  name: Образование
+  subcategories:
+    - id: calendar
+      name: 📅 Календарь
+    - id: education_abroad
+      name: 🗺 Учёба за границей
+      isFeatured: true
+    - id: hobby
+      name: 🥁 Увлечения
+    - id: easy
+      name: 🙏 Просто о сложном
+- id: people
+  name: Люди
+  subcategories:
+    - id: stories
+      name: 💬 Истории
+    - id: experience
+      name: 💁‍♂️ Личный опыт
+    - id: interview
+      name: 🤝 Интервью
+- id: travel
+  name: Путешествия
+  subcategories:
+    - id: guide
+      name: 🧗‍♂️ Гид
+    - id: one_day
+      name: 🏕 Один день
+    - id: opening_of_the_week
+      name: 7️⃣ Открытие недели
+    - id: route
+      name: 📍 Маршрут
+- id: culture
+  name: Культура
+  subcategories:
+    - id: new_music
+      name: 🎵 Новая музыка
+      isFeatured: true
+    - id: kino
+      name: 🎥 Кино
+    - id: art
+      name: 🖼 Искусство
+- id: ecology
+  name: Экология
+  subcategories:
+    - id: ecology
+      name: 🏞 Экология
+      isFeatured: true
+    - id: problems
+      name: 🏭 Проблемы
+- id: misc
+  name: Разное
+  subcategories:
+    - id: rage
+      name: 😡 Бесит
+

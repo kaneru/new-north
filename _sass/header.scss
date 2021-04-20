@@ -1,0 +1,156 @@
+.header {
+  background: $white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  padding: 1.25em 0;
+  margin-bottom: 4em;
+  border-bottom: 1px solid $gray-300;
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $white;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 1em;
+      margin-bottom: 1em;
+
+      a {
+        color: $blue-900;
+        font-size: 1.2rem;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+
+        &:hover {
+          color: $red-800;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.header__logo {
+  font-family: "Rubik Mono One", sans-serif;
+  font-display: optional;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.2rem;
+
+  a {
+    text-decoration: none;
+    color: $blue-900;
+
+    &:hover {
+      color: $red-800;
+    }
+  }
+}
+
+.header__nav-toggle {
+  display: none;
+}
+
+.header__nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.header__nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: transform 0.15s ease 0.15s;
+}
+
+.header__nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    display: flex;
+  }
+
+  svg {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header__nav-toggle-label {
+    svg {
+      transform: scale(1);
+    }
+  }
+
+  .header__logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-toggle-label {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    padding: 1.5em 4em;
+
+    h1 {
+      text-align: left;
+      flex-basis: 50%;
+    }
+
+    nav {
+      position: relative;
+      text-align: left;
+      transition: none;
+      transform: scale(1, 1);
+      background: none;
+      top: initial;
+      left: initial;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+
+      & > *:not(:first-child) {
+        margin-left: 1em;
+      }
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    nav a {
+      opacity: 1 !important;
+      position: relative;
+    }
+  }
+}

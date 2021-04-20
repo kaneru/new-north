@@ -1,0 +1,15 @@
+<div class="featured-troika-wrapper">
+  <h2>Ближайшие мероприятия</h2>
+  <div class="calendar-grid">
+    {% assign sorted_items = site.data.calendar | sort: 'start_date' %}
+    {% for item in sorted_items limit:3 %}
+      <div class="calendar-card shadow">
+        <h4 class="calendar-card__title"><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h4>
+        <small class="calendar-card__category">{{ item.category }}</small>
+        <time class="calendar-card__date">{{ item.start_date | russian_long_date }}–{{ item.end_date | russian_long_date }}</time>
+        <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="calendar-card__button">{{ item.location }}</a>
+      </div>
+    {% endfor %}
+  </div>
+  <a class="featured-troika-wrapper__all-items-link"href="/calendar">Все мероприятия</a>
+</div>

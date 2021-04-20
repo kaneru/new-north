@@ -1,0 +1,20 @@
+$blue-900: #094067;
+$blue-500: #3da9fc;
+$blue-200: #90b4ce;
+$blue-100: #d8eefe;
+$gray-800: #353c45;
+$gray-700: #47505c;
+$gray-600: #505b68;
+$gray-500: #5f6c7b;
+$gray-400: #a3abb8;
+$gray-300: #d4d3d3;
+$gray-100: #eeeeee;
+$red-800: #ef4565;
+$red-400: hsl(349, 80%, 76%);
+$white: #fffffe;
+$black: #1d1d1f;
+
+.shadow {
+  box-shadow: 0 14.3px 5.3px rgba(0, 0, 0, 0.012),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.032), 0 36px 80px rgba(0, 0, 0, 0.08);
+}

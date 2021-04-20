@@ -1,0 +1,21 @@
+---
+layout: default
+title: Рубрики
+permalink: /categories
+---
+
+<h1>Рубрики</h1>
+
+<p>Наши статьи разбиты на категории для вашего удобства</p>
+
+{% for category in site.data.categories %}
+  {% assign category_name = category.name %}
+  <div class="category_wrapper">
+    <h2>{{ category_name  }}</h2>
+    <ul>
+      {% for subcategory in category.subcategories %}
+        <li><a href="/{{ subcategory.id }}">{{ subcategory.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

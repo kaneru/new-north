@@ -1,0 +1,54 @@
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 2em;
+}
+
+.calendar-card {
+  background: $blue-900;
+  padding: 1em;
+  border-radius: 0.5rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-card__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $red-800;
+    }
+  }
+}
+
+.calendar-card__category {
+  color: $white;
+  font-weight: 700;
+}
+
+.calendar-card__date {
+  color: #f8f8f8;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.calendar-card__button {
+  text-decoration: none;
+  background: $white;
+  color: $black;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  padding: 0.5em 1em;
+  align-self: flex-start;
+
+  &:hover {
+    transition: background-color 0.3s ease;
+    background: $red-800;
+  }
+}
